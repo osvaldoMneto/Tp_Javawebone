@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+  <title>Página de Cadastro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+<div class="container">
+  <h2>Página de Cadastro</h2>
+  <form action="aluno" method="post">
+   <div class="form-group">
+      <label for="name">Nome:</label>
+      <input type="text" class="form-control"placeholder="Digite o nome" name="nome">
+    </div>
+  
+  
+  
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control"placeholder="Enter email" name="email">
+    </div>
+    
+     <div class="radio">
+     <label>Curso:</label>
+      	  <div>
+	      <label><input type="radio" name="curso" value="G">Graduaçao</label>
+	      </div>
+	      <div>
+	      <label><input type="radio" name="curso" value="P">Pos-graduação</label>
+	      </div>
+	      <div>
+	      <label><input type="radio" name="curso" value="M">Mestrado</label>
+	      </div>
+	      <div>
+	      <label><input type="radio" name="curso" value="D">Doutorado</label>
+      	  </div>	
+      
+      <div class="form-group">
+      <h3>Região:</h3>
+      <select name="regiao">
+       <option value= N>Norte</option>
+        	<option value= "S">Sul</option>
+        	<option value= "L">Leste</option>
+	        <option value="O">Oeste</option>
+	        <option value= "NE">Nordeste</option>
+	        <option value="Su">Sudeste</option>
+      </select>
+      </div>
+        
+         <div class="disciplinas">
+        <h3>Disciplina:</h3>
+          <label class="checkbox-inline"><input name="disciplina" type="checkbox"value="Java">Java</label>
+          <label class="checkbox-inline"><input name="disciplina" type="checkbox"value="Python">Python</label>
+          <label class="checkbox-inline"><input name="disciplina" type="checkbox"value=PHP>PHP</label>
+          <label class="checkbox-inline"><input name="disciplina" type="checkbox" value="Javascript">JavaScript</label>
+        </div>
+        
+    
+        
+      
+        
+       	
+     
+  
+    <p><button type="submit" class="btn btn-default">Submit</button></p>
+  </form>
+</div>
+      
+</body>
+</html>
